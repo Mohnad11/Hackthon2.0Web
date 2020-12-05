@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <!-- My Css Files -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+
+    <title>Hackthon</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <h2 class="title">- Fishing The Words -</h2>
+        <div class="icons-top">
+            <i class="show-popup fas fa-question-circle" data-popup-num=".popup-num1"></i>
+            <i class="sound-icon fas fa-volume-up"></i>
+            <input class="slider" type="range" min="0" max="100" value="100">
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Popup -->
+    <div class="popup popup-num1">
+        <div class="inner-popup centering-element">
+            <h2>Fishing Words Game</h2>
+            <p>
+                Catch a fish with the appropriate word for the displayed sentence.
+            </p>
+            <div class="buttons-popup">
+                <button class="cancel">Close</button>
+            </div>
+            <button class="close-btn">x</button>
+        </div>
+    </div>
+
+    <div class="popup finished-game centering-element">
+        <div class="inner-popup centering-element">
+            <h2>Game Completed 💚</h2>
+            <p>
+                Do you want to play this game again?!
+            </p>
+            <div class="buttons-popup">
+                <button class="cancel">Close</button>
+                <button class="restart-game" onclick="location.reload()">Play Again</button>
+            </div>
+            <button class="close-btn">x</button>
+        </div>
+    </div>
+    <div class="popup sent-game centering-element">
+        <div class="inner-popup centering-element">
+            <h2>Fishing Words Game</h2>
+            <p>
+                Task Was Sent Successfully!
+            </p>
+            <div class="buttons-popup">
+                <button class="cancel">Close</button>
+            </div>
+            <button class="close-btn">x</button>
+        </div>
+    </div>
+    <!-- End Popup -->
+
+    <div class="parent-container">
+        <div class="question">
+            <i class="fas fa-chevron-right arrow arrow-right"></i>
+            <i class="fas fa-chevron-left arrow arrow-left disabled"></i>
+            <span class="quest-num">1 / 5</span>
+            <h2>
+                Madrid Is The <span class="missing-word"></span> Of Spain
+            </h2>
+        </div>
+
+        <div class="container">
+
+            <div class="all-fishs">
+                <div class="fish" data-fish-num="1">
+                    <img src="images/fishs/fish_2.png" alt="">
+                    <span>Village</span>
+                </div>
+                <div class="fish" data-fish-num="2">
+                    <img src="images/fishs/fish_3.png" alt="">
+                    <span>Neighborhood</span>
+                </div>
+                <div class="fish" data-fish-num="3">
+                    <img src="images/fishs/fish_4.png" alt="">
+                    <span>School</span>
+                </div>
+                <div class="fish" data-fish-num="4">
+                    <img src="images/fishs/fish_5.png" alt="">
+                    <span>Capital</span>
+                </div>
+                <div class="fish" data-fish-num="5">
+                    <img src="images/fishs/fish_6.png" alt="">
+                    <span>Enemy</span>
+                </div>
+            </div>
+            <!-------------------------------->
+
+
+            <div class="hook" id="hook">
+                <img src="images/hook.png" alt="">
+            </div>
+
+            <div class="stars centering-element">
+                <img src="images/start_small.png" alt="">
+                <img src="images/start_big.png" alt="">
+                <img src="images/start_small.png" alt="">
+            </div>
+
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+
+        </div>
+
+
+
+    </div>
+
+    <button class="send-task">Send Task</button>
+
+    <!-- Start Scripts -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>
